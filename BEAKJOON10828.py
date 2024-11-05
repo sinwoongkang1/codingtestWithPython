@@ -24,4 +24,3 @@ for _ in range(commandLineCounter):
             print(-1)
         else:
             print(stack[len(stack)-1])
-
