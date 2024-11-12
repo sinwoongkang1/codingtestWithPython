@@ -8,7 +8,7 @@ nine= [9,1]
 for _ in range(testCount):
     a,b = map(int,input().split())
     a = a%10
-    if a==10:
+    if a==0:
        print(10)
     elif a == 1 or a==5 or a==6 :
        print(a)
