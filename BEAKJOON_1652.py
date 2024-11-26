@@ -1,29 +1,30 @@
 roomSize = int(input())
 roomStructure = [list(map(str,input())) for _ in range(roomSize)]
 
-row_count = [False]*roomSize
-column_count = [False]*roomSize
+
+real_row_count = 0
+
+real_column_count = 0
 
 for i in range(roomSize):
-    for j in range(roomSize-1):
+    row_count = 0
+    for j in range(roomSize):
         if roomStructure[i][j] ==  ".":
-            if roomStructure[i][j+1] == ".":
-                row_count[i] = True
+            row_count += 1
+        else:
+            row_count = 0
+        if row_count == 2:
+            real_row_count += 1 
 
 for i in range(roomSize):
-    for j in range(roomSize-1):
+    column_count = 0
+    for j in range(roomSize):
         if roomStructure[j][i] == ".":
-            if roomStructure[j+1][i] == ".":
-                column_count[i] = True
+            column_count += 1
+        else:
+            column_count = 0
+        if column_count ==2:
+            real_column_count += 1
 
-def makeCount(data):
-    count = 0
-    for i in data:
-        if i == True:
-            count += 1
-    return count
 
-answer = []
-answer.append(makeCount(row_count))
-answer.append(makeCount(column_count))
-print(*answer,sep=" ")
+print(real_row_count,real_column_count)
