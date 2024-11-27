@@ -8,8 +8,8 @@ def makeScore(data):
         throw =       int(    56.0211  *  ((data[i+2] - 1.5        )**1.05))
         run_200 =     int(    4.99087  *((  42.5      - data[i+3]  )**1.81))
         longRun =     int(    0.188807 *((  data[i+4] - 210        )**1.41))
-        throw_chang = int(15.9803  *((  data[i+5] - 3.8        )**1.04))
-        run_800 =     int(   0.11193  *((  254       - data[i+6]  )**1.88))
+        throw_chang = int(    15.9803  *((  data[i+5] - 3.8        )**1.04))
+        run_800 =     int(    0.11193  *((  254       - data[i+6]  )**1.88))
         sum = huddle + highRun + throw + run_200 + longRun + throw_chang + run_800
     return sum
 
