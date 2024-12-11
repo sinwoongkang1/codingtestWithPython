@@ -8,7 +8,7 @@ def gcd(a, b):
         a, b = b, a % b
     return abs(a)
 result = gcd(a,b)
-if gcd(a,b) > 0 :
+if result > 0 :
     a //= result
     b //= result
 print(a,b)
