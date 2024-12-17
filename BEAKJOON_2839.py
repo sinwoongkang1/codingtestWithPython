@@ -1,11 +1,12 @@
-kgramsOfSugar = int(input())
+sugar = int(input())
 
-for i in range(kgramsOfSugar//3 + 1):
-    for j in range(kgramsOfSugar//5 +1):
-        if kgramsOfSugar == i*3 + j*5:
-            print(i+j)
-            break
-        else:
-            print(-1)
-            break
-
+bag = 0
+while sugar >= 0 :
+    if sugar % 5 == 0 : 
+        bag += (sugar // 5) 
+        print(bag)
+        break
+    sugar -= 3  
+    bag += 1  
+else :
+    print(-1)
