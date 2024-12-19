@@ -18,6 +18,7 @@ firstNum,secondNum = map(int,input().split())
 # for i in sosu:
 #     if firstNum <= i <= secondNum:
 #         print(i)
+
 printNumber = []
 for i in range(secondNum+1):
     printNumber.append(i)
