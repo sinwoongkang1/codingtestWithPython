@@ -1,7 +1,5 @@
 N = int(input())
-
 array = [[0] * 100 for _ in range(100)]
-
 count = 0
 for i in range(N):
     a,b = map(int,input().split())
