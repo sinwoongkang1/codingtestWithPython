@@ -8,4 +8,3 @@ for _ in range(testCase):
     c = find(a,b)
     answer = (a*b) // c
     print(answer) 
-
