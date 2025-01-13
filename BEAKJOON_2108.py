@@ -36,7 +36,7 @@ def moreAppearance(stack):
 def range(stack):
     stack.sort()
     return stack[-1] - stack[0]
-print("-----------------")
+
 print(average(stack))
 print(center(stack))
 print(moreAppearance(stack))
