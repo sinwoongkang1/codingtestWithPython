@@ -22,8 +22,4 @@ while True:
                 answer.append(arr[i][0])
 for i in range(len(answer)):
     print(i+1,answer[i])
-        
-
-
-       
       
