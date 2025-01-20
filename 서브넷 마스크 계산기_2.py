@@ -53,3 +53,6 @@ def main():
     print("서브넷 마스크:", decimal_to_ip(subnet_mask))
     print("서브넷 마스크 (이진수):", subnet_mask_binary)
     print("네트워크 주소:", network_address_ip)
+
+if __name__ == "__main__":
+    main()
