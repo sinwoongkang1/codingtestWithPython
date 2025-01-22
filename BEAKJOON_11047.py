@@ -13,4 +13,4 @@ for i in stack:
         K %= i
         if K == 0:
             break
-print(count)                 
+print(count)
