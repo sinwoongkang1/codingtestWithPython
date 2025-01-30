@@ -1,24 +1,22 @@
-import sys
+n = int(input())
 
-numberOfStudent = int(sys.stdin.readline().strip())
+students = [[0] * n for _ in range(n)]
+datas = [[int(x) for x in input().split()] for _ in range(n)]
 
-classTable = []
-for _ in range(numberOfStudent):
-    student_info = list(map(int, sys.stdin.readline().strip().split()))
-    classTable.append([[score, 0] for score in student_info])
+for i in range(n):
+    for j in range(5):
+        for k in range(n):
+            if datas[i][j] == datas[k][j]:
+                students[i][k] = 1
 
-for i in range(len(classTable[0])):
-    for j in range(numberOfStudent-1):
-        for k in range(j,numberOfStudent-1):
-            if classTable[j][i][0] == classTable[k+1][i][0]:
-               classTable[j][i][1] += 1
-               classTable[k+1][i][1] += 1
-            
-stack = []
-for i in range(len(classTable[0])):
-    sum = 0
-    for j in range(numberOfStudent):
-        sum += classTable[j][i][1]
-    stack.append(sum)
-        
-print(stack.index(max(stack))+1)
+answers = [0] * n
+for idx, s in enumerate(students):
+    answers[idx] = s.count(1)
+
+def printAnswer(answers):
+    for i in range(n):
+        if answers[i] == max(answers):
+            print(i+1)
+            return
+
+printAnswer(answers)
