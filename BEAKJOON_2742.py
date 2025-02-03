@@ -1,6 +1,3 @@
-import sys
-A = int(sys.stdin.readline().strip())
-B = int(sys.stdin.readline().strip())
-print(A+B)
-print(A-B)
-print(A*B)
+N = int(input())
+for i in range(N,0,-1):
+    print(i)
