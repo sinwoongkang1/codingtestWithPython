@@ -6,7 +6,6 @@ def get_max_first_index(arr):
     max_value = max(first_values)
     return max_value
     
-
 def orderPrint(data,target):
     arr = [[0, 0] for _ in range(len(data))]
     for i in range(len(data)):
