@@ -14,5 +14,5 @@ for i in range(len(targetNum)-1,-1,-1):
         count += 1
     else:
         break
-print(targetNum)
+
 print(count)
