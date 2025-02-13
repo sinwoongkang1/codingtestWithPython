@@ -50,8 +50,3 @@ if stack_2 == brray:
     print(*signal,sep="\n")
 else:
     print("NO")
-
-
-
-
-
